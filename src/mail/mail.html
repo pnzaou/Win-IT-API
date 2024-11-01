@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: teal; /* Couleur de fond du header */
+            color: white;
+            border-radius: 8px 8px 0 0; /* Bords arrondis pour le haut */
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .details {
+            margin-bottom: 20px;
+        }
+        .details p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Demande de Client</h1>
+        </div>
+        <div class="details">
+            <p><strong>Nom:</strong> {{ nom }}</p>
+            <p><strong>Prénom:</strong> {{ prenom }}</p>
+            <p><strong>Numéro de téléphone:</strong> {{ phone }}</p>
+            <p><strong>Email:</strong> {{ email }}</p>
+        </div>
+        <div class="content">
+            <h2>Contenu de la demande:</h2>
+            <p>{{ demande }}</p>
+        </div>
+        <div class="footer">
+            <p>Ce message a été envoyé depuis votre site web.</p>
+        </div>
+    </div>
+</body>
+</html>
